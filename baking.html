@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .social-icons img {
+            margin-right: 10px;
+        }
+        .order-form input, .order-form textarea, .order-form button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .subscribe-section {
+            background-color: pink;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .btn-read-more {
+            margin-top: 20px;
+        }
+        img.recipe-img {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mb-4">
+        <img src="./assets/images/logo1.png" height="60" alt="Logo">
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-9">
+                <h2>My Favourite Carrot Cake Recipe</h2>
+                <p>Posted on March 23, 2015 / posted in <a href="#">CAKES</a> / <a href="#">1011 comments</a></p>
+            </div>
+            <div class="col-md-3 social-icons">
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="./assets/images/twitter.png" width="35"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/images/facebook.png" width="35"></a>
+                <a href="https://www.pinterest.com/" target="_blank"><img src="./assets/images/pinterest.png" width="35"></a>
+                <a href="https://www.yummly.com/" target="_blank"><img src="./assets/images/yummly.png" width="35"></a>
+                <a href="https://www.google.com/intl/mk/gmail/about/" target="_blank"><img src="./assets/images/email.png" width="40"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./assets/images/01.jpg" class="recipe-img" alt="">
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/02.jpg" class="recipe-img" alt="">
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/03.jpg" class="recipe-img" alt="">
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/04.jpg" class="recipe-img" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-4 order-form">
+                <h4>Porosit tani!</h4>
+                <form>
+                    <input type="number" min="0" max="100" placeholder="Sasia" id="how-many">
+                    <input type="text" placeholder="Emri" id="name">
+                    <input type="text" placeholder="Mbiemri" id="surname">
+                    <textarea id="address" rows="4" placeholder="Shkruaj adresen"></textarea>
+                    <input type="date" id="data">
+                    <input type="text" placeholder="+389 71 650 845" id="phone-number" value="+389">
+                    <button type="submit" class="btn btn-primary">Porosia</button>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <h4>Perbersit</h4>
+                <ul>
+                    <li>1 dhe 1/4 filxhan (300 ml) ekspres i përgatitur shumë fort</li>
+                    <li>6 lugë gjelle (90 ml) Grand Marnier</li>
+                    <li>40-45 ladyfingers</li>
+                    <li>16 ons (rreth 2 filxhanë; 450 g) mascarpone</li>
+                    <li>1/4 cup (60ml) rum te zi</li>
+                    <li>4 vezë të mëdha të pasterizuara, të ndara</li>
+                    <li>1/2 filxhan (100 g) sheqer të grimcuar</li>
+                    <li>2 gota (480 ml) krem ​​i rëndë</li>
+                    <li>1/2 lugë çaji ekstrakt të pastër vanilje</li>
+                    <li>1/8 lugë çaji kripë</li>
+                    <li>pluhur kakao natyral i pa ëmbëlsuar</li>
+                </ul>
+                <img src="./assets/images/carrot-cake.jpg" class="img-fluid mt-3" alt="Carrot Cake">
+            </div>
+        </div>
+    </div>
+
+    <div class="container subscribe-section">
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="list" class="form-label">Une dua te pranoj emails me lidhje me:</label>
+                <select name="recipes" id="list" class="form-select">
+                    <option value="Recipes">Receta</option>
+                    <option value="Cakes">Torta</option>
+                    <option value="Pies">Pite</option>
+                    <option value="Tiramisu">Tiramisu</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Frekuenca:</label><br/>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" id="D1" class="form-check-input">
+                    <label for="D1" class="form-check-label">Ditore</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" id="D2" class="form-check-input">
+                    <label for="D2" class="form-check-label">Javore</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" id="D3" class="form-check-input">
+                    <label for="D3" class="form-check-label">Mujore</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ex.shpresasali@gmail.com">
+                <button type="submit" class="btn btn-success mt-2">Subscribe</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container text-center">
+        <a href="index.html" class="btn btn-read-more btn-secondary">Shko prapa</a>
+    </div>
+</body>
+</html>

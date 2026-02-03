@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800;900&family=Roboto:wght@400;700;900&display=swap');
+@import 'variables';
+@import 'base';
+@import 'mixins';
+
+// HEADER
+header {
+    height: 80px;
+    background-color: $bwhite;
+
+    .container {
+        height: 80px;
+        @include flexSbAc;
+    }
+
+    nav {
+        width: 50%;
+        display: block;
+
+        ul {
+            list-style-type: none;
+            @include flexSbAc;
+        }
+
+        a {
+            color: $cblack;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+// MAIN
+main {
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    background-image: url('../images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        height: calc(100vh - 80px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .intro {
+        width: 60%;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        h3 {
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 1.375rem;
+            margin: 0 1px 30px 0;
+        }
+
+        span {
+            display: block;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            // margin: 22px 0 0;
+        }
+
+        .title {
+            grid-column: 1 / 4;
+            margin-bottom: 80px;
+
+            span:nth-child(1) {
+                text-transform: uppercase;
+                letter-spacing: 12px;
+                font-size: 1.875rem;
+                font-weight: 400;
+                margin: 0 auto 0 0;
+            }
+        }
+
+        .findus {}
+
+        .hours {}
+
+        .callus {
+            a {
+                display: inline-block;
+                margin-bottom: 20px;
+                text-decoration: none;
+                border-bottom: 1px solid $corange;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    border-color: $cblack;
+                }
+            }
+        }
+    }
+}
+
+// CATEGORIES
+section.categories {
+    padding: 70px 0px 120px 0px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .categories-grid {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+
+        .category {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        img {
+            height: 65px !important;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+// FRESH BREADS
+.fresh-breads {
+    padding: 100px 0px;
+    background-image: url('../images/fresh-breads-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 50%;
+    background-color: #000;
+
+    .container {
+        height: 500px;
+        color: $cwhite;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .content {
+        width: 50%;
+
+        p {
+            margin: 30px 0;
+        }
+
+        a {
+            color: $cwhite;
+        }
+    }
+
+    .btn {
+        color: $cwhite;
+        border-color: $cwhite;
+        margin-top: 10px;
+        display: inline-block;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: #000;
+            background-color: $cwhite;
+        }
+    }
+}
+
+// OUR BREADS
+.our-breads {
+    padding: 70px 0;
+    background-color: $bgray;
+
+    h2 {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .our-breads-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+        text-align: center;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.125rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin: 20px auto 0;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+
+    p.copyrights {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+// Delicious baking
+.delicious-baking {
+    padding: 80px 0px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 45%, rgba(242, 242, 242, 1) 45%);
+
+    .container {
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr;
+        gap: 40px;
+
+        .fc-image {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .sc-image {
+            margin-top: 40px;
+        }
+    }
+
+    .content {
+        margin-top: 50px;
+
+        h3 {
+            font-size: 1.875rem;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 2;
+            margin: 30px 0px 0px 0px;
+
+            a {
+                text-decoration: none;
+                border-bottom: 2px solid #000;
+                transition: all .3 ease-in-out;
+
+                &:hover {
+                    border-bottom-color: $corange;
+                }
+            }
+        }
+
+        .btn {
+            border-color: #000;
+            color: #000;
+            display: inline-block;
+
+            &:hover {
+                color: white;
+                background-color: #000;
+            }
+        }
+    }
+}
+
+// MENU
+.menu {
+    padding: 120px 0px;
+    background-image: url('../images/menu-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h2 {
+        color: $cwhite;
+        text-align: center;
+    }
+
+    &-grid {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        .card {
+            padding: 35px 20px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 1.25rem;
+            line-height: 2;
+
+            &::before {
+                content: '—';
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .copyrights {
+        color: white;
+        text-align: center;
+        margin-top: 60px;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+// Fresh bread
+.fresh-bread {
+    padding: 80px 0px;
+    background-image: url('../images/white-bg.jpg');
+    background-size: cover;
+
+    .container>div {
+        text-align: center;
+    }
+
+    img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+        line-height: 2;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .btn {
+        border-width: 2px;
+        border-color: $blightblack;
+        color: $blightblack;
+        display: inline-block;
+
+        &:hover {
+            color: white;
+            background-color: $blightblack;
+        }
+    }
+}
+
+// CONTACT
+.contact {
+    padding: 120px 0px;
+    background-image: url('../images/above-footer-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    &-info {
+        width: 45%;
+        color: white;
+        background-color: rgba(26, 26, 26, 0.8);
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+
+        h3 {
+            color: $corange;
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-transform: none;
+            font-size: 2.25rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.125rem;
+            margin-top: 25px;
+        }
+
+        a {
+            color: $corange;
+        }
+
+        p.copytights {
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+// FOOTER 
+footer {
+    background-color: $blightblack;
+    padding: 60px 0px;
+    text-align: center;
+
+    p {
+        line-height: 40px;
+        font-size: 0.875rem;
+        color: white;
+
+        a {
+            color: $corange;
+        }
+    }
+}
+
+
+// MBILE VERSION (media query)
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+            width: 31px;
+            height: 31px;
+            background-image: url('../images/menu-icon.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            &:hover {
+                background-image: url('../images/menu-icon-hover.png');
+            }
+        }
+    }
+
+    main {
+        height: auto;
+        // background-size: 1020px auto;
+        // background-position: top right;
+        background-position: 96.11% 50%;
+
+        .container {
+            height: auto;
+        }
+
+        h3 {
+            margin: 20px 0px 10px 0px !important;
+        }
+
+        .intro {
+            width: 100%;
+            height: 100vh;
+            padding-top: 80px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+
+            .title {
+                grid-column: 1 / 1;
+
+                h1 {
+                    font-size: 3.8rem;
+                }
+
+                span:nth-child(1) {
+                    font-size: 1.05rem;
+                    line-height: 1.2;
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    section.categories {
+        .categories-grid {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+
+            img {
+                height: 65px !important;
+            }
+        }
+    }
+
+    .fresh-breads {
+        height: 765px;
+        background-position: bottom left;
+        background-size: 100%;
+
+        .container {
+            height: 100%;
+            align-items: flex-start;
+        }
+
+        .content {
+            width: 100%;
+        }
+    }
+
+    .our-breads {
+        .our-breads-grid {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+
+        .card {
+            margin: 0 30px;
+        }
+    }
+
+    .delicious-baking {
+        .container {
+            width: 85% !important;
+        }
+
+        &-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .sc-image {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .menu {
+        &-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .fresh-bread {
+        h3 {
+            font-size: 2.125rem;
+        }
+
+        img {
+            width: 85%;
+            margin-top: 80px;
+        }
+    }
+
+    // CONTACT
+    .contact {
+        &-info {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h3 {
+            font-size: 1.9rem;
+        }
+
+        p {
+            font-size: 1.0rem;
+        }
+    }
+}

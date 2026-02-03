@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .jumbotron {
+      background-image: url('https://flexsub.shop/content/images/2021/10/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png');
+      background-size: cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .filmatfundit {
+      background-image: url('https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg');
+    }
+    .filmatfundit h2 {
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .kategorit {
+      background-image: url('https://img.freepik.com/free-photo/-black-concrete-textured-background_53876-124541.jpg');
+    }
+    .kategorit h2 {
+       color: white;
+       font-family: 'Courier New', Courier, monospace;
+    }
+    
+
+  </style>
+</head>
+<body>
+
+  <section class="navbar navbar-expand-lg navbar-collapse bg-dark">
+    <a class="navbar-brand" href="#">Filmat</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#filmatefundit">Filmat e Fundit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#categories">Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontakti</a>
+        </li>
+      </ul>
+
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Kërko">
+        <button class="btn btn-outline-light" type="submit">Kërko</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Mirë se vini në Netflix</h1>
+      <p class="lead">Eksploroni botën e kinemasë dhe gjeni filmin tuaj të preferuar të radhës.</p>
+    </div>
+  </section>
+
+
+  <section class="carousel py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Filmat e Përzgjedhur</h2>
+      <div id="featuredMoviesCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://img1.wsimg.com/isteam/ip/d6a3e7a7-e920-4711-bf09-856dd846af78/oppenheimer.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280" class="d-block w-100" alt="Filmi 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.eteknix.com/wp-content/uploads/2018/07/Venom-Movie-1-800x400.jpg" class="d-block w-100" alt="Filmi 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://explainedthis.com/wp-content/uploads/2023/08/The-Menu-800x400.webp" class="d-block w-100" alt="Filmi 3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.etv.co.za/sites/default/files/inline-images/ARTICLE-WEEK-3-eMovies-Extra-RISEN.jpg" class="d-block w-100" alt="Filmi 4">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.splingmovies.com/wp-content/uploads/2022/04/Ambulance-Michael-Bay.jpg" class="d-block w-100" alt="Filmi 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#featuredMoviesCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#featuredMoviesCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="filmatefundit" class="filmatfundit py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Filmat e Fundit</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/85/Small_soldiers_movie_poster.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Small Soldiers</h5>
+              <p class="card-text">Aksion</p>
+              <p class="card-text">Përshkruan dy grupe lodrash të cilat bëhen të ndjeshme pasi gabimisht u instaluan me një mikroprocesor ushtarak, duke vënë në rrezik dy familje kur një grup bëhet vdekjeprurës.</p>
+              <button type="button" class="btn btn-primary">Detajet</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://movieguide.b-cdn.net/wp-content/uploads/2020/09/small_group.jpg" height="337">
+            <div class="card-body">
+              <h5 class="card-title">Small Group</h5>
+              <p class="card-text">Aventurë</p>
+              <p class="card-text">Burrë dhe gruaja e tij që fshihen si të krishterë të rremë për të bërë një dokumentar për ndikimin në pakësim të krishterimit në Amerikë</p>
+              <button type="button" class="btn btn-primary">Detajet</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://www.tallengestore.com/cdn/shop/products/Joker_-_Put_On_A_Happy_Face_-_Joaquin_Phoenix_-_Hollywood_English_Movie_Poster_3_de5e4cfc-cfd4-4732-aad1-271d6bdb1587.jpg?v=1579504979" height="337">
+            <div class="card-body">
+              <h5 class="card-title">Joker</h5>
+              <p class="card-text">Thriller</p>
+              <p class="card-text">Gjatë viteve 1980, një stand-up komedian i dështuar çmendet dhe kthehet në një jetë krimi dhe kaosi në Gotham City, ndërsa bëhet një figurë famëkeqe e krimit psikopatik.</p>
+              <button type="button" class="btn btn-primary">Detajet</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://www.tallengestore.com/cdn/shop/products/TheConjuring2-HollywoodEnglishHorrorMoviePoster_3ccbd106-c2e2-4e6d-9d87-4e2cc7a6b28d.jpg?v=1625220800" height="337">
+            <div class="card-body">
+              <h5 class="card-title">The Conjuring 2</h5>
+              <p class="card-text">Horror</p>
+              <p class="card-text">Pasi ndjen se vajza e saj është e pushtuar dhe katër fëmijët e saj të përhumbur nga ngjarje të mbinatyrshme, Peggy Hodgson kërkon ndihmë kur një entitet keqdashës merr në zotërim fëmijën e dytë më të madh, Xhenet.</p>
+              <button type="button" class="btn btn-primary">Detajet</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://ih1.redbubble.net/image.5192004316.5902/fposter,small,wall_texture,product,750x1000.jpg" height="337">
+            <div class="card-body">
+              <h5 class="card-title">The Creator</h5>
+              <p class="card-text">Aksion</p>
+              <p class="card-text">një ish-agjent i forcave speciale rekrutohet për të gjuajtur dhe vrarë "Krijuesin", i cili ka zhvilluar një armë misterioze me fuqinë për t'i dhënë fund luftës</p>
+              <button type="button" class="btn btn-primary">Detajet</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://redcarpetreporttv.com/wp-content/uploads/2023/01/LF_POSTwSTM.jpg" height="337">
+            <div class="card-body">
+              <h5 class="card-title">Big Foot: Last Frontier</h5>
+              <p class="card-text">Aventurë</p>
+              <p class="card-text">Kërkimi për Sasquatch të çon në pyjet dhe shpellat më të errëta të Alaskës! Nëpër fshatrat e braktisura, pyjet e errëta dhe luginat e fshehura të Alaskës, tregohen përralla për krijesat si majmun</p>
+              <button type="button" class="btn btn-primary">Detajet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="categories" class="kategorit bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Kategoritë</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://i.pinimg.com/1200x/50/bd/3d/50bd3d3a9649e4ac0a70ce043364e555.jpg" height="337">
+            <div class="card-body">
+              <h5 class="card-title">Aksion</h5>
+              <p class="card-text">Eksploroni filma të mbushur me aksion.</p>
+              <a href="#" class="btn btn-primary">Shiko Filmat</a>
+            </div>
+          </div>
+        </div>      
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://c4.wallpaperflare.com/wallpaper/690/930/459/oz-the-great-and-powerful-scene-wallpaper-preview.jpg" height="337">
+            <div class="card-body">
+              <h5 class="card-title">Fantazi</h5>
+              <p class="card-text">Filmat fantazi sjellin botëra të pazakonta me aventura dhe magji.</p>
+              <a href="#" class="btn btn-primary">Shiko Filmat</a>
+            </div>
+          </div>
+        </div>    
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://www.wallpaperup.com/uploads/wallpapers/2014/02/12/252517/2592d433d97abd738b68a43faf7ca5a8.jpg" height="338">
+            <div class="card-body">
+              <h5 class="card-title">Aventurë</h5>
+              <p class="card-text">Filmat e aventurës ofrojnë emocione të pazakonta dhe udhëtime të pasura me ngjarje.</p>
+              <a href="#" class="btn btn-primary">Shiko Filmat</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://c4.wallpaperflare.com/wallpaper/624/98/383/paranorman-comedy-horror-movie-animation-movie-wallpaper-preview.jpg" height="337">
+            <div class="card-body">
+              <h5 class="card-title">Komedi</h5>
+              <p class="card-text">Komedia, zhanër filmik që synon të argëtojë me humor të ndryshëm.</p>
+              <a href="#" class="btn btn-primary">Shiko Filmat</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://i.pinimg.com/originals/80/3b/4f/803b4f52ba6dfeafea75f269d9e3fd6a.jpg" height="337">
+            <div class="card-body">
+              <h5 class="card-title">Thriller</h5>
+              <p class="card-text">Filmat thriller janë karakterizuar nga tensioni i përhershëm dhe emocionet e forta që përforcojnë audiencën.</p>
+              <a href="#" class="btn btn-primary">Shiko Filmat</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://as2.ftcdn.net/v2/jpg/04/04/74/67/1000_F_404746715_vzYYj1AVWZzr09DKz3yQMPx4jtDoTysE.jpg" height="337">
+            <div class="card-body">
+              <h5 class="card-title">Horror</h5>
+              <p class="card-text">Filmave horror u përket zhanri që synon të krijojë frikë dhe tension përmes skenave të tmerrshme dhe ngjarjeve të pazakonta.</p>
+              <a href="#" class="btn btn-primary">Shiko Filmat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Na Kontaktoni</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Emri Juaj">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Emaili Juaj">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Mesazhi"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Dergo Mesazhin</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      <p>&copy; 2023 Netflix. Të Gjitha të Drejtat të Rezervuara.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="modal fade" id="movieDetailsModal" tabindex="-1" role="dialog" aria-labelledby="movieDetailsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="movieDetailsModalLabel">Detajet e Filmave</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="movieDetails">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+  document.querySelectorAll('.btn-primary').forEach(button => {
+    button.addEventListener('click', function() {
+      const card = this.closest('.card');
+      const title = card.querySelector('.card-title').textContent;
+      const genre = card.querySelector('.card-text').textContent;
+      
+
+      const movieDetails = document.getElementById('movieDetails');
+      movieDetails.innerHTML = `
+        <h5>Titulli: ${title}</h5>
+        <p>Zhanër: ${genre}</p>
+      `;
+
+      $('#movieDetailsModal').modal('show'); 
+    });
+  });
+</script>
+
+</body>
+</html>

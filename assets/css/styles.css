@@ -1,0 +1,25 @@
+
+  
+  .content {
+    max-width: 600px;
+    text-align: justify;
+    overflow: hidden;
+  }
+  
+  #text {
+    max-height: 200px; /* Adjust this height based on your content */
+    transition: max-height 0.5s ease;
+  }
+  
+  #readMoreBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
